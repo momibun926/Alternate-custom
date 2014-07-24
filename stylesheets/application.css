@@ -255,10 +255,34 @@ textarea.wiki-edit
 	font-family:monospace;
 }
 
+/* input button */
+input[type="button"],
+input[type="submit"]
+{
+   font-family: Meiryo UI, verdana, arial, helvetica, sans-serif; 
+   border-radius: 3px;
+   -moz-border-radius: 3px;
+   -webkit-border-radius: 3px;
+   -o-border-radius: 3px;
+   -ms-border-radius: 3px;
+   border:#aaa 1px solid;
+   -moz-box-shadow: inset 0 0 5px rgba(0,0,0,0.2),0 0 2px rgba(0,0,0,0.3);
+   -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2),0 0 2px rgba(0,0,0,0.3);
+   padding:3px 3px 4px 2px;
+   cursor:pointer;
+   color:#333;
+   font-weight:bold;
+   background:#eee;
+}
+
 /* Misc */
 .box { background-color: #fcfcfc; }
-
 .contextual { font-size: 1.1em; }
+
+#activity h3
+{
+	border-bottom:1px solid #999; 	
+}
 
 hr { background:#eee none repeat scroll 0% 0%; }
 
