@@ -1,0 +1,275 @@
+/*
+ * alternate custom
+ *
+ * author: Hajime Nakagama
+ *
+ */
+
+/* Impoert Original */
+@import url(../../../stylesheets/application.css);
+
+/* Body */
+body, 
+#wrapper
+{ 
+	background-color:#eee; 
+	font-family: Meiryo UI, verdana, arial, helvetica, sans-serif; 
+}
+
+/* Hyper link */
+a:hover 
+{ 
+	text-decoration: underline; 
+}
+a:hover, 
+a:active 
+{ 
+	color: #2A5685; 
+}
+
+/* Header */
+#header 
+{ 
+	margin: 0;
+	background-color: #104E8B; 
+	padding: 8px 8px 0px 8px; 
+	height: 6.5em; 
+	font-family: Meiryo UI, Verdana, Arial; font-size: 12px; 
+	font-weight: bold; 
+}
+#header h1 
+{ 
+	margin: 0 24px; 
+}
+#header #quick-search 
+{ 
+	margin: 0 24px; 
+}
+
+/* Top Menu */
+#top-menu 
+{ 
+	position: relative; 
+	padding:2px 10px;
+	background-color: #1874CD; 
+	color: #fff; 
+	font-weight: normal;
+	font-size: 0.9em; 
+	line-height: 18px;
+}
+#top-menu li a 
+{
+	font-weight: normal;
+}
+
+/* Main  */
+#main 
+{ 
+	background: #eee; 
+	margin: 8px 24px 0px 24px; 
+}
+#content, 
+#main.nosidebar #content 
+{ 
+	background: #fff; 
+	border-right: 1px solid #bbb; 
+	border-bottom: 1px solid #bbb; 
+	overflow: auto; 
+	-moz-box-shadow: #bbb 1px 1px 2px; 
+	-webkit-box-shadow: 1px 1px 2px #bbb; 
+}
+#content 
+{ 
+	width: auto; 
+}
+#content .wiki img 
+{ 
+	max-width: 98%; 
+}
+#main.nosidebar #content 
+{ 
+	width: auto; 
+}
+
+/* Side bar */
+#sidebar 
+{ 
+	width: auto; 
+	margin-left: 10px; 
+}
+#sidebar a:hover 
+{ 
+	background-color:#039; 
+	color:#fff; 
+	text-decoration: none;
+}
+
+/* header markup */
+h1,h2,h3,h4
+{
+	font-family: Meiryo UI, verdana, arial, helvetica, sans-serif; 
+}
+
+/* wiki */
+.wiki h1
+{
+	border-bottom:1px solid #999; 
+}
+
+/* Main Menu */
+#main-menu 
+{
+	position: absolute;
+	bottom: 0px;	
+	margin: 0px 24px 0px 24px;
+}
+#main-menu li a 
+{ 
+	padding:2px 4px; 
+	font-weight:normal;
+}
+#main-menu li a:hover 
+{ 
+	background: #eee; 
+	color: #111; 
+	text-decoration: none; 
+}
+#main-menu li a.selected, 
+#main-menu li a.selected:hover 
+{ 
+	background: #eee; 
+	color: #111; 
+}
+
+/* Tables List */
+table.list 
+{ 
+	border: none; 
+}
+table.list th 
+{ 
+	background-color: #fff; 
+}
+table.list tbody td, 
+table.list tbody tr td, 
+table.list tbody tr td.checkbox 
+{ 
+	border-bottom: solid 1px #ddd; 
+	font-size: 12px; 
+	padding:4px 10px 4px 3px; 
+}
+table.list thead th {
+	border: none;
+	border-bottom:1px solid #999;
+	font-size:12px;
+	font-weight:normal;
+	padding:0pt 3px 3px;
+	text-transform:uppercase;
+}
+table.list thead th a 
+{ 
+	color: #000; 
+}
+table.list thead th a:hover 
+{ 
+	color: #000; 
+}
+
+/* Issues grid styles by priorities (provided by Wynn Netherland) */
+table.list tr.issue a { color: #333; }
+/* priority-5 */
+tr.odd.priority-5, table.list tbody tr.odd.priority-5:hover { color: #900; font-weight: bold; }
+tr.odd.priority-5 { background: #fbb; }
+tr.even.priority-5, table.list tbody tr.even.priority-5:hover { color: #900; font-weight: bold; }
+tr.even.priority-5 { background: #fcc; }
+tr.priority-5 a, tr.priority-5:hover a { color: #900; }
+tr.odd.priority-5 td, tr.even.priority-5 td { border-color: #ffb4b4; }
+
+/* priority-4 */
+tr.odd.priority-4, table.list tbody tr.odd.priority-4:hover { color: #900; }
+tr.odd.priority-4 { background: #fbb; }
+tr.even.priority-4, table.list tbody tr.even.priority-4:hover { color: #900; }
+tr.even.priority-4 { background: #fcc; }
+tr.priority-4 a { color: #900; }
+tr.odd.priority-4 td, tr.even.priority-4 td { border-color: #ffb4b4; }
+
+/* priority-3 */
+tr.odd.priority-3, table.list tbody tr.odd.priority-3:hover { color: #900; }
+tr.odd.priority-3 { background: #fee; }
+tr.even.priority-3, table.list tbody tr.even.priority-3:hover { color: #900; }
+tr.even.priority-3 { background: #fdd; }
+tr.priority-3 a { color: #900; }
+tr.odd.priority-3 td, tr.even.priority-3 td { border-color: #fcc; }
+
+/* priority-1 */
+tr.odd.priority-1, table.list tbody tr.odd.priority-1:hover { color: #559; }
+tr.odd.priority-1 { background: #eaf7ff; }
+tr.even.priority-1, table.list tbody tr.even.priority-1:hover { color: #559; }
+tr.even.priority-1 { background: #f2faff; }
+tr.priority-1 a { color: #559; }
+tr.odd.priority-1 td, tr.even.priority-1 td { border-color: #add7f3; }
+
+p.breadcrumb 
+{
+	background-color:#eee;
+	border-bottom:1px solid white;
+	font-size:0.9em;
+	margin:-6px -10px 6px;
+	padding:6px;
+	text-indent:15px;
+}
+
+/* Fields */
+input[type="text"], 
+input[type="password"], 
+textarea, 
+select 
+{ 
+	padding: 2px; 
+	border: 1px 
+	solid #d7d7d7; 
+}
+input[type="text"], 
+input[type="password"] 
+{ 
+	padding: 3px; 
+}
+input[type="text"]:focus, 
+input[type="password"]:focus, 
+textarea:focus, 
+select:focus 
+{ 
+	border: 1px solid #886; 
+}
+option 
+{ 
+	border-bottom: 1px dotted #ddd; 
+}
+input#issue_subject 
+{ 
+	font-size: 1.5em; 
+	width: 90%; 
+}
+textarea.wiki-edit 
+{ 
+	font-family:monospace;
+}
+
+/* Misc */
+.box { background-color: #fcfcfc; }
+
+.contextual { font-size: 1.1em; }
+
+hr { background:#eee none repeat scroll 0% 0%; }
+
+div.issue { background: #FFFFEC; }
+div.splitcontentleft ol li, 
+div.splitcontentleft ul li, 
+div.wiki ol li, 
+div.wiki ul li 
+{ 
+	padding: 4px 0; 
+}
+div.wiki ul.toc li { padding: 0; }
+ol li ol li { list-style-type: lower-alpha; }
+ol li ol li ol li { list-style-type: lower-roman; }
