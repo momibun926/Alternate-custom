@@ -12,7 +12,7 @@
 body, 
 #wrapper
 { 
-	background-color:#eee; 
+	background-color:#808F12; 
 	font-family: Meiryo UI, verdana, arial, helvetica, sans-serif; 
 }
 
@@ -26,12 +26,27 @@ a:active
 { 
 	color: #2A5685; 
 }
+/* Top Menu */
+#top-menu 
+{ 
+	position: relative; 
+	padding:2px 10px;
+	background-color: #042608; 
+	color: #fff; 
+	font-weight: normal;
+	font-size: 0.9em; 
+	line-height: 18px;
+}
+#top-menu li a 
+{
+	font-weight: normal;
+}
 
 /* Header */
 #header 
 { 
 	margin: 0;
-	background-color: #104E8B; 
+	background-color: #2A5C0B; 
 	padding: 8px 8px 0px 8px; 
 	height: 6.5em; 
 	font-family: Meiryo UI, Verdana, Arial; font-size: 12px; 
@@ -45,21 +60,10 @@ a:active
 { 
 	margin: 0 24px; 
 }
-
-/* Top Menu */
-#top-menu 
+#footer 
 { 
-	position: relative; 
-	padding:2px 10px;
-	background-color: #1874CD; 
-	color: #fff; 
-	font-weight: normal;
-	font-size: 0.9em; 
-	line-height: 18px;
-}
-#top-menu li a 
-{
-	font-weight: normal;
+	border-top: 0px; 
+	background:none; 
 }
 
 /* Main  */
@@ -67,10 +71,14 @@ a:active
 { 
 	background: #eee; 
 	margin: 8px 24px 0px 24px; 
+	border-radius: 10px;
 }
+
 #content, 
 #main.nosidebar #content 
 { 
+	width: auto; 
+	border-radius: 10px;
 	background: #fff; 
 	border-right: 1px solid #bbb; 
 	border-bottom: 1px solid #bbb; 
@@ -78,17 +86,9 @@ a:active
 	-moz-box-shadow: #bbb 1px 1px 2px; 
 	-webkit-box-shadow: 1px 1px 2px #bbb; 
 }
-#content 
-{ 
-	width: auto; 
-}
 #content .wiki img 
 { 
 	max-width: 98%; 
-}
-#main.nosidebar #content 
-{ 
-	width: auto; 
 }
 
 /* Side bar */
@@ -125,20 +125,24 @@ h1,h2,h3,h4
 }
 #main-menu li a 
 { 
+    border-radius: 3px 3px 0px 0px;
 	padding:2px 4px; 
+	border-bottom:2px solid #2A5C0B;	
 	font-weight:normal;
 }
 #main-menu li a:hover 
 { 
-	background: #eee; 
-	color: #111; 
+	background: #808F12; 
+	color: #fff; 
+	border-bottom:2px solid #808F12;	
 	text-decoration: none; 
 }
 #main-menu li a.selected, 
 #main-menu li a.selected:hover 
 { 
-	background: #eee; 
-	color: #111; 
+	background: #808F12; 
+	color: #fff; 
+	border-bottom:2px solid #E05106;
 }
 
 /* Tables List */
@@ -275,8 +279,12 @@ input[type="submit"]
    background:#eee;
 }
 
+
 /* Misc */
+#login-form table 
+
 .box { background-color: #fcfcfc; }
+
 .contextual { font-size: 1.1em; }
 
 #activity h3
