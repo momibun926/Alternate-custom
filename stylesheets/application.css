@@ -12,8 +12,13 @@
 body, 
 #wrapper
 { 
-	background-color:#808F12; 
+	background-color:#FFFFFF; 
+	margin: 0px 24px 0px 24px;
 	font-family: Meiryo UI, verdana, arial, helvetica, sans-serif; 
+}
+#wrapper3
+{ 
+	background-color:#D3DEF1; 
 }
 
 /* link */
@@ -32,7 +37,7 @@ a:active
  */
 #top-menu 
 { 
-	background-color: #042608; 
+	background-color: #547BA8; 
 	color: #fff; 
 	position: relative; 
 	padding:2px 10px;
@@ -50,7 +55,7 @@ a:active
  */
 #header 
 { 
-	background-color: #2A5C0B; 
+	background-color: #8DA3C4; 
 	padding: 8px 8px 0px 8px; 
 	margin: 0;
 	height: 6.5em; 
@@ -71,6 +76,7 @@ a:active
  */
 #main-menu 
 {
+	padding:4px; 
 	margin: 0px 24px 0px 24px;
 	bottom: 0px;	
 	position: absolute;
@@ -78,23 +84,20 @@ a:active
 #main-menu li a 
 { 
 	padding:2px 4px; 
-    border-radius: 3px 3px 0px 0px;
-	border-bottom:2px solid #2A5C0B;	
+    border-radius: 3px 3px 3px 3px;
 	font-weight:normal;
 }
 #main-menu li a:hover 
 { 
-	background: #808F12; 
+	background: #F39800; 
 	color: #fff; 
-	border-bottom:2px solid #808F12;	
 	text-decoration: none; 
 }
 #main-menu li a.selected, 
 #main-menu li a.selected:hover 
 { 
-	background: #808F12; 
+	background: #F39800; 
 	color: #fff; 
-	border-bottom:2px solid #F39800;
 }
 
 /* 
@@ -168,7 +171,11 @@ h1,h2,h3,h4
 {
 	border-bottom:1px solid #999; 
 }
-
+div.wiki ol li, 
+div.wiki ul li 
+{ 
+	padding: 4px 0; 
+}
 /* 
  * Tables List
  *
@@ -254,7 +261,6 @@ textarea.wiki-edit
 { 
 	font-family:monospace;
 }
-
 /* 
  * input button 
  *
@@ -293,20 +299,16 @@ input[type="submit"]
 { 
 	background-color: #fffffc; 
 }
-
-hr { background:#eee none repeat scroll 0% 0%; }
-
+/* 
+ * Issue
+ *
+ */
 div.issue
 { 
 	background: #FFFFCA; 
 }
 div.splitcontentleft ol li, 
-div.splitcontentleft ul li, 
-div.wiki ol li, 
-div.wiki ul li 
+div.splitcontentleft ul li
 { 
 	padding: 4px 0; 
 }
-div.wiki ul.toc li { padding: 0; }
-ol li ol li { list-style-type: lower-alpha; }
-ol li ol li ol li { list-style-type: lower-roman; }
