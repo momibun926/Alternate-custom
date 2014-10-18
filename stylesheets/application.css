@@ -36,16 +36,16 @@ a:active
  */
 #top-menu 
 { 
-	background-color: #547BA8; 
-	color: #fff; 
+	background-color: #fff; 
+	color: #444; 
 	position: relative; 
 	padding:2px 10px;
-	font-weight: normal;
-	font-size: 0.9em; 
+	font-size: 1.0em; 
 	line-height: 18px;
 }
 #top-menu li a 
 {
+	color: #444; 
 	font-weight: normal;
 }
 /*
@@ -54,7 +54,7 @@ a:active
  */
 #header 
 { 
-	background-color: #8DA3C4; 
+	background-color: #547BA8; 
 	padding: 8px 0px 0px 8px; 
 	margin: 0;
 	height: 6.5em; 
@@ -75,28 +75,25 @@ a:active
  */
 #main-menu 
 {
-	padding:4px; 
 	margin: 0px 24px 0px 24px;
 	bottom: 0px;	
 	position: absolute;
 }
 #main-menu li a 
 { 
-	padding:2px 4px; 
-    border-radius: 3px 3px 3px 3px;
+	padding: 5px;
 	font-weight:normal;
 }
 #main-menu li a:hover 
 { 
-	background: #F39800; 
-	color: #fff; 
+	background-color: #547BA8; 
+	color: #444; 
 	text-decoration: none; 
 }
 #main-menu li a.selected, 
 #main-menu li a.selected:hover 
 { 
-	background: #F39800; 
-	color: #fff; 
+	color: #444; 
 }
 
 /* 
@@ -105,19 +102,12 @@ a:active
  */
 #main 
 { 
-	background: #eee; 
-	margin: 0px 24px 0px 24px; 
-	border-radius: 10px;
+	background: #fff; 
 }
 #content, 
 #main.nosidebar #content 
 { 
 	background: #fff; 
-	border-radius: 10px;
-	border-right: 1px solid #bbb; 
-	border-bottom: 1px solid #bbb; 
-	-moz-box-shadow: #bbb 1px 1px 2px; 
-	-webkit-box-shadow: 1px 1px 2px #bbb; 
 	width: auto; 
 	overflow: auto; 
 }
@@ -136,6 +126,7 @@ a:active
 #sidebar 
 { 
 	margin-left: 10px; 
+	background-color:#fff; 
 	width: auto; 
 }
 #sidebar a:hover 
