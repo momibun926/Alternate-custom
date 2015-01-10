@@ -1,292 +1,178 @@
-/*
- * alternate custom
- *
- * author: Hajime Nakagama
- *
- */
-
-/* Impoert Original */
 @import url(../../../stylesheets/application.css);
 
-/* Body */
-body, 
-#wrapper
-{ 
-  font-family: Meiryo UI, verdana, arial, helvetica, sans-serif; 
+#activity h3,
+.wiki h1 {
+ border-bottom      : 1px solid #999;
 }
-
-/* link */
-a:hover 
-{ 
-  text-decoration: underline; 
+#content,
+#main.nosidebar #content {
+ background         : #fff;
+ overflow           : auto;
+ width              : auto;
 }
-a:hover, 
-a:active 
-{ 
-  color: #2A5685; 
+#content .wiki img {
+ max-width          : 98%;
 }
-/* 
- * Top Menu
- *
- */
-#top-menu 
-{ 
-  background-color: #fff; 
-  border-bottom: solid 5px #679407;  
-  color: #444; 
-  position: relative; 
-  font-size: 1.0em; 
-  line-height: 18px;
+#footer {
+ border-top         : 0px;
 }
-#top-menu li a 
-{
-  color: #444;
-  font-weight: normal;
+#header #quick-search,
+#header h1 {
+ margin             : 0 24px;
 }
-/*
- * Header
- *
- */
-#header 
-{
-  background-color: #0E5E00;
-  padding: 8px 0px 0px 8px; 
-  margin: 0;
-  min-height: 5.8em;  
-  font-family: Meiryo UI, Verdana, Arial; font-size: 12px; 
-  font-weight: bold; 
+#header {
+ background-color   : #0E5E00;
+ font-family        : Meiryo UI, Verdana, Arial;
+ font-size          : 12px;
+ font-weight        : bold;
+ margin             : 0;
+ min-height         : 5.8em;
+ padding            : 8px 0px 0px 8px;
 }
-#header h1 
-{ 
-  margin: 0 24px; 
+#main {
+ background         : #fff;
 }
-#header #quick-search 
-{ 
-  margin: 0 24px; 
+#main-menu {
+ bottom             : 0px;
+ margin             : 0px 24px 0px 24px;
+ position           : absolute;
 }
-/*
- * Main Menu
- *
- */
-#main-menu 
-{
-  margin: 0px 24px 0px 24px;
-  bottom: 0px;	
-  position: absolute;
+#main-menu li a {
+ font-weight        : normal;
+ padding            : 5px;
 }
-#main-menu li a 
-{ 
-  padding: 5px;
-  font-weight:normal;
+#main-menu li a.selected,
+#main-menu li a.selected:hover {
+ color              : #444;
 }
-#main-menu li a:hover 
-{ 
-  background-color: #FFF;
-  color: #444; 
-  text-decoration: none; 
+#main-menu li a:hover {
+ background-color   : #FFF;
+ color              : #444;
+ text-decoration    : none;
 }
-#main-menu li a.selected, 
-#main-menu li a.selected:hover 
-{ 
-  color: #444; 
+#sidebar {
+ background-color   : #fff;
+ margin-left        : 10px;
+ width              : 20%;
 }
-
-/* 
- * Main,content 
- *
- */
-#main 
-{ 
-  background: #fff; 
+#sidebar a:hover {
+ background-color   : #039;
+ color              : #fff;
+ text-decoration    : none;
 }
-#content, 
-#main.nosidebar #content 
-{ 
-  background: #fff; 
-  width: auto; 
-  overflow: auto; 
+#top-menu {
+ background-color   : #fff;
+ border-bottom      : solid 5px #679407;
+ color              : #444;
+ font-size          : 1.0em;
+ line-height        : 18px;
+ position           : relative;
+ text-decoration    : none;
 }
-#content .wiki img 
-{ 
-  max-width: 98%; 
+#top-menu li a {
+ color              : #444;
+ font-weight        : normal;
 }
-.contextual 
-{ 
-  font-size: 1.1em; 
+#wrapper,
+body,
+h1,
+h2,
+h3,
+h4 {
+ font-family        : Meiryo UI, verdana, arial, helvetica, sans-serif;
 }
-/* 
- * Side bar
- *
- */
-#sidebar 
-{ 
-  margin-left: 10px; 
-  background-color:#fff; 
-  width: auto; 
+.box {
+ background-color   : #fffffc;
 }
-#sidebar a:hover 
-{ 
-  background-color:#039; 
-  color:#fff; 
-  text-decoration: none;
+.contextuala {
+ font-size          : 1.1em;
 }
-/* 
- * footer
- *
- */
-#footer 
-{ 
-  border-top: 0px; 
+a:active {
+ color              : #2A5685;
 }
-/* 
- * heading
- *
- */
-h1,h2,h3,h4
-{
-  font-family: Meiryo UI, verdana, arial, helvetica, sans-serif; 
+a:hover {
+ color              : #2A5685;
+ text-decoration    : underline;
 }
-
-/* 
- * wiki
- *
- */
-.wiki h1
-{
-  border-bottom:1px solid #999; 
+div.issue {
+ background         : #FFFFCA;
 }
-div.wiki ol li, 
-div.wiki ul li 
-{ 
-  padding: 4px 0; 
+div.splitcontentleft ol li,
+div.splitcontentleft ul li,
+div.wiki ol li,
+div.wiki ul li {
+ padding            : 4px 0;
 }
-/* 
- * Tables List
- *
- */
-table.list 
-{ 
-  border: none; 
+input#issue_subject {
+ font-size          : 1.5em;
+ width              : 90%;
 }
-table.list th 
-{ 
-  background-color: #fff; 
+input[type="button"],
+input[type="submit"] {
+ -moz-box-shadow    : inset 0 0 5px rgba(0,0,0,0.2),0 0 2px rgba(0,0,0,0.3);
+ -webkit-box-shadow : inset 0 0 5px rgba(0, 0, 0, 0.2),0 0 2px rgba(0,0,0,0.3);
+ background         : #eee;
+ border             : #aaa 1px solid;
+ color              : #333;
+ cursor             : pointer;
+ font-family        : Meiryo UI, verdana, arial, helvetica, sans-serif;
+ padding            : 4px 9px 5px 9px;
 }
-table.list tbody td, 
-table.list tbody tr td, 
-table.list tbody tr td.checkbox 
-{ 
-  font-size: 12px; 
-  padding:4px 10px 4px 3px; 
+input[type="password"],
+input[type="text"],
+select,
+textarea {
+ border             : 1px solid #d7d7d7;
+ padding            : 2px;
+}
+input[type="password"]:focus,
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+ border             : 1px solid #886;
+}
+option {
+ border-bottom      : 1px dotted #ddd;
+}
+table.list {
+ border             : none;
+}
+table.list tbody td,
+table.list tbody tr td,
+table.list tbody tr td.checkbox {
+ font-size          : 12px;
+ padding            : 4px 10px 4px 3px;
+}
+table.list th {
+ background-color   : #fff;
 }
 table.list thead th {
-  border: none;
-  border-bottom:1px solid #E4E4E4;
-  font-size:12px;
-  font-weight:normal;
-  padding:0pt 3px 3px;
-  text-transform:uppercase;
+ border             : none;
+ border-bottom      : 1px solid #E4E4E4;
+ font-size          : 12px;
+ font-weight        : normal;
+ padding            : 0pt 3px 3px;
+ text-transform     : uppercase;
 }
-table.list tr
-{
-  border-bottom:1px solid #E4E4E4;
-}	
-table.list tr a 
-{ 
-  color: #666;
-  font-weight: bold; 
+table.list tr {
+ border-bottom      : 1px solid #E4E4E4;
 }
-tr.priority-5 
-{ 
-  background: #f44; 
+table.list tr a {
+ color              : #666;
+ font-weight        : bold;
 }
-tr.priority-4 
-{ 
-  background: #f77; 
+textarea.wiki-edit {
+ font-family        : monospace;
 }
-tr.priority-3 
-{ 
-  background: #fbb; 
+tr.priority-1 {
+ background         : #9ff;
 }
-tr.priority-1 
-{ 
-  background: #9ff; 
+tr.priority-3 {
+ background         : #fbb;
 }
-/* 
- * Fields , textarea
- *
- */
-input[type="text"], 
-input[type="password"], 
-textarea, 
-select 
-{ 
-  padding: 2px; 
-  border: 1px 
-  solid #d7d7d7; 
+tr.priority-4 {
+ background         : #f77;
 }
-input[type="text"]:focus, 
-input[type="password"]:focus, 
-textarea:focus, 
-select:focus 
-{ 
-  border: 1px solid #886; 
-}
-option 
-{ 
-  border-bottom: 1px dotted #ddd; 
-}
-input#issue_subject 
-{ 
-  font-size: 1.5em; 
-  width: 90%; 
-}
-textarea.wiki-edit 
-{ 
-  font-family:monospace;
-}
-/* 
- * input button 
- *
- */
-input[type="button"],
-input[type="submit"]
-{
-  font-family: Meiryo UI, verdana, arial, helvetica, sans-serif; 
-  border:#aaa 1px solid;
-  -moz-box-shadow: inset 0 0 5px rgba(0,0,0,0.2),0 0 2px rgba(0,0,0,0.3);
-  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2),0 0 2px rgba(0,0,0,0.3);
-  padding:5px 5px 6px 4px;
-  cursor:pointer;
-  color:#333;
-  background:#eee;
-}
-/*
- * Activity
- *
- */
-#activity h3
-{
-  border-bottom:1px solid #999; 	
-}
-/* 
- * Misc 
- *
- */
-.box 
-{ 
-  background-color: #fffffc; 
-}
-/* 
- * Issue
- *
- */
-div.issue
-{ 
-  background: #FFFFCA; 
-}
-div.splitcontentleft ol li, 
-div.splitcontentleft ul li
-{ 
-  padding: 4px 0; 
+tr.priority-5 {
+ background         : #f44;
 }
