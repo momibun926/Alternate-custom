@@ -21,7 +21,7 @@
  margin             : 0 24px;
 }
 #header {
- background         : url(../images/logo.png) no-repeat 25px 10px;
+ background         : url(../images/logo.png) no-repeat 10px 10px;
  background-color   : #0a2551;
  font-family        : Meiryo UI, verdana, arial, helvetica, sans-serif;
  font-size          : 12px;
@@ -39,19 +39,29 @@
  position           : absolute;
 }
 #main-menu li a {
+ border-radius      : 5px 5px 0 0;
+ color              : #aaa;
  font-weight        : normal;
  padding            : 5px;
 }
+#main-menu li a#new-object {
+ background-color   : #fff;
+ color              : #111;
+ font-weight        : bold;
+}
 #main-menu li a.selected,
 #main-menu li a.selected:hover {
- border-radius      : 5px 5px 0 0;
- color              : #444;
+ color              : #111;
 }
 #main-menu li a:hover {
- background-color   : #FFF;
- border-radius      : 5px 5px 0 0;
+ background-color   : #fff;
  color              : #111;
  text-decoration    : none;
+}
+#main-menu .menu-children li a:hover {
+ background-color   : #0a2551;
+ border-radius      : 0px;
+ color              : #fff;
 }
 #sidebar {
  background-color   : #fff;
